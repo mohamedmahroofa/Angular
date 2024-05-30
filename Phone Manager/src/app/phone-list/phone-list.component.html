@@ -1,0 +1,29 @@
+<!--Table to display list of phones-->
+<div class="container">
+  <button (click)="addPhone()" class="btn btn-success mb-3">New Phone</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Manufacturer</th>
+        <th>Price</th>
+        <th>Operating System</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let phone of phones">
+        <td>{{ phone.name }}</td>
+        <td>{{ phone.manufacturer }}</td>
+        <td>C${{ phone.price }}</td>
+        <td>{{ phone.operatingSystem }}</td>
+        <td>
+          <!--Button to view Phones-->
+          <button (click)="viewPhone(phone.id)" class="btn btn-primary">
+            View
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

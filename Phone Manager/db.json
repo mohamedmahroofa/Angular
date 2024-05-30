@@ -1,0 +1,32 @@
+{
+  "phones": [
+    {
+      "id": "c4be763d-7733-4122-9538-c6926a646f95",
+      "name": "Samsung Galaxy S10",
+      "manufacturer": "Samsung",
+      "price": 799,
+      "operatingSystem": "Android"
+    },
+    {
+      "id": "b46a1bd9-8ebe-4a20-8b6a-88842bc2e924",
+      "name": "iPhone 15 Pro Max",
+      "manufacturer": "Apple",
+      "price": 1299,
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "e4d23461-2425-45a1-a765-3b04c9321a55",
+      "name": "Iphone 16 Ultra Pro ",
+      "manufacturer": "Apple",
+      "price": 3099,
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "a22c4570-860c-4caa-9422-128bcb030d81",
+      "name": "Iphone 1234",
+      "manufacturer": "Apple Max",
+      "price": 10000,
+      "operatingSystem": "Novida"
+    }
+  ]
+}

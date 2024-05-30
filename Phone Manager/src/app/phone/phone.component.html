@@ -1,0 +1,58 @@
+<!--Form to view and edit phone detials-->
+<div class="container">
+    <form (ngSubmit)="savePhone()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input
+            [(ngModel)]="phone.name"
+            name="name"
+            class="form-control"
+            id="name"
+            required
+            />
+        </div>
+        <div class="form-group">
+            <label for="manufacturer">Manufacturer</label>
+            <input
+            [(ngModel)]="phone.manufacturer"
+            name="manufacturer"
+            class="form-control"
+            id="manufacturer"
+            required
+            />
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input
+            [(ngModel)]="phone.price"
+            name="price"
+            type="number"
+            class="form-control"
+            id="price"
+            required
+            />
+        </div>
+        <div class="form-group">
+            <label for="operatingSystem">Operating System</label>
+            <input
+            [(ngModel)]="phone.operatingSystem"
+            name="operatingSystem"
+            class="form-control"
+            id="operatingSystem"
+            required
+            />
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <button
+        type="button"
+        (click)="deletePhone()"
+        class="btn btn-danger"
+        *ngIf="phone.id"
+        >
+        Delete
+        </button>
+        <button type="button" (click)="goBack()" class="btn btn-secondary">
+        Back
+        </button>
+    </form>
+</div>
