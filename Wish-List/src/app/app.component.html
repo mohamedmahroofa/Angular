@@ -1,4 +1,10 @@
 <div class="container">
+  
+  <div *ngIf="items.length === 0; else showItems">
+    There is no wishes currently.
+  </div>
+  
+  <ng-template #showItems>
   <ul class="wish-list">
     <li *ngFor="let item of items">
       <div class="form-check">
@@ -9,4 +15,5 @@
       </div>
     </li>
   </ul>
+  </ng-template>
 </div>
