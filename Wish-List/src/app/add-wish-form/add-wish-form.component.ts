@@ -4,9 +4,9 @@ import { WishItem } from '../../shared/models/wishitem';
 @Component({
   selector: 'app-add-wish-form',
   templateUrl: './add-wish-form.component.html',
-  styleUrl: './add-wish-form.component.css'
+  styleUrl: './add-wish-form.component.css',
 })
-export class AddWishFormComponent implements OnInit{
+export class AddWishFormComponent implements OnInit {
   @Output() addWish = new EventEmitter<WishItem>();
 
   constructor() {}
@@ -15,7 +15,7 @@ export class AddWishFormComponent implements OnInit{
     
   }
 
-  newWishText : string = "";
+  newWishText: string = '';
 
   addNewWish() {
     //this.items.push(new WishItem(this.newWishText));
