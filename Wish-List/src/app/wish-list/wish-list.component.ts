@@ -15,8 +15,5 @@ export class WishListComponent implements OnInit {
     
   }
 
-  toggleItem(item : WishItem) {
-    item.isComplete = !item.isComplete;
-    console.log(item);
-  }
+  
 }
