@@ -14,5 +14,5 @@ export class AppComponent {
     new WishItem('To be a filthy rich.'),
   ];
 
-  filter: any = () => {};
+  filter: any;
 }
