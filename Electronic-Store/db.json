@@ -21,7 +21,7 @@
     ],
     "inventories": [
       {
-        "id": "123e4567-e89b-12d3-a456-426614174000",
+        "inventoryId": "123e4567-e89b-12d3-a456-426614174000",
         "name": "Apple I Phone 15 Pro Max",
         "price": 1899,
         "quantity": 25,
@@ -32,7 +32,7 @@
         "isDeleted": false
       },
       {
-        "id": "123e4567-e89b-12d3-a456-426614174001",
+        "inventoryId": "123e4567-e89b-12d3-a456-426614174001",
         "name": "Alienware Area 51M",
         "price": 2500,
         "quantity": 14,
@@ -43,7 +43,7 @@
         "isDeleted": false
       },
       {
-        "id": "ce15e6dd-422a-4276-994c-ac7270435e07",
+        "inventoryId": "ce15e6dd-422a-4276-994c-ac7270435e07",
         "name": "Playstation 5 Slim ",
         "price": 599,
         "quantity": 13,
@@ -54,7 +54,7 @@
         "isDeleted": false
       },
       {
-        "id": "96a610e0-b055-4993-8359-4f4af71752b2",
+        "inventoryId": "96a610e0-b055-4993-8359-4f4af71752b2",
         "name": "Apple MacBook Pro M3",
         "price": 2899,
         "quantity": 5,

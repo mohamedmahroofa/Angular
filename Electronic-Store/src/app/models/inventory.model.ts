@@ -1,6 +1,6 @@
 // Inventory model Interface
 export interface Inventory {
-    id: string; // GUID String
+    inventoryId: string; // GUID String
     name: string; // Name of the products in the inventory
     price: number; // Price of the products in the inventory
     quantity: number; // Quantity of the products in the inventory

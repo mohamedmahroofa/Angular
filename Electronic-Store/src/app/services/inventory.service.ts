@@ -18,23 +18,23 @@ export class InventoryService {
   }
 
   // Fetch a single product in the inventory by id
-  getInventory(id: string): Observable<Inventory> {
-    return this.http.get<Inventory>(`${this.url}/${id}`);
+  getInventory(inventoryId: string): Observable<Inventory> {
+    return this.http.get<Inventory>(`${this.url}/${inventoryId}`);
   }
 
   // Add a new product to the inventory and also generate a unique id for the product
   addInventory(inventory: Inventory): Observable<Inventory> {
-    inventory.id = uuidv4();
+    inventory.inventoryId = uuidv4();
     return this.http.post<Inventory>(this.url, inventory);
   }
 
   // Update an existing product in the inventory
   updateInventory(inventory: Inventory): Observable<Inventory> {
-    return this.http.put<Inventory>(`${this.url}/${inventory.id}`, inventory);
+    return this.http.put<Inventory>(`${this.url}/${inventory.inventoryId}`, inventory);
   }
 
   // Delete a product in the inventory by id
-  deleteInventory(id: string): Observable<void> {
-    return this.http.delete<void>(`${this.url}/${id}`);
+  deleteInventory(inventoryId: string): Observable<void> {
+    return this.http.delete<void>(`${this.url}/${inventoryId}`);
   }
 }
