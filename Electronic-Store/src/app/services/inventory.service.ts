@@ -24,7 +24,7 @@ export class InventoryService {
 
   // Add a new product to the inventory and also generate a unique id for the product
   addInventory(inventory: Inventory): Observable<Inventory> {
-    inventory.inventoryId = uuidv4();
+    inventory.inventoryId = uuidv4(); // This code will generate a new Guid.
     return this.http.post<Inventory>(this.url, inventory);
   }
 
