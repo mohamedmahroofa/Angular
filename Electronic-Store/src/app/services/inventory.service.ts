@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { v4 as uuidv4 } from 'uuid';
-import { Inventory } from '../models/inventory.model'
+import { Inventory } from '../models/inventory.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class InventoryService {
-  private url = 'http://localhost:3000/inventories'; // URL to the JSON server 
+  private url = 'http://localhost:3000/inventories'; // URL to the JSON server
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   // Fetch all the products in the inventory
   getInventories(): Observable<Inventory[]> {
@@ -30,7 +30,10 @@ export class InventoryService {
 
   // Update an existing product in the inventory
   updateInventory(inventory: Inventory): Observable<Inventory> {
-    return this.http.put<Inventory>(`${this.url}/${inventory.inventoryId}`, inventory);
+    return this.http.put<Inventory>(
+      `${this.url}/${inventory.inventoryId}`,
+      inventory
+    );
   }
 
   // Delete a product in the inventory by id
