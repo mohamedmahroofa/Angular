@@ -8,7 +8,6 @@
                 <th>Price (CAD)</th>
                 <th>Quantity</th>
                 <th>Description</th>
-                <th>Category</th>
                 <th>Release Date</th>
             </tr>
         </thead>
@@ -18,7 +17,6 @@
                 <td>{{inventory.price}}</td>
                 <td>{{inventory.quantity}}</td>
                 <td>{{inventory.description}}</td>
-                <td>{{inventory.categoryId}}</td>
                 <td>{{inventory.releaseDate}}</td>
                 <td>
                     <button (click)="viewInventory(inventory.inventoryId)" class="btn btn-primary">
