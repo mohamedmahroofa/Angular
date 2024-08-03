@@ -6,7 +6,7 @@ import { Inventory } from '../models/inventory.model';
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',
-  styleUrl: './inventory.component.scss',
+  styleUrls: ['./inventory.component.scss'],
 })
 export class InventoryComponent implements OnInit {
   inventory: Inventory = {
