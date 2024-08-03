@@ -1,68 +1,81 @@
 {
-    "categories": [
-      {
-        "categoryId": "1",
-        "name": "Smart Phones",
-        "dateCreated": "2023-09-20",
-        "isDeleted": false
-      },
-      {
-        "categoryId": "2",
-        "name": "Laptop",
-        "dateCreated": "2024-07-06",
-        "isDeleted": false
-      },
-      {
-        "categoryId": "3",
-        "name": "Gaming Console",
-        "dateCreated": "2021-09-28",
-        "isDeleted": false
-      }
-    ],
-    "inventories": [
-      {
-        "inventoryId": "123e4567-e89b-12d3-a456-426614174000",
-        "name": "Apple I Phone 15 Pro Max",
-        "price": 1899,
-        "quantity": 25,
-        "description": "The latest Iphone 15 Pro Max with 1TB storage",
-        "categoryId": 1,
-        "releaseDate": "2022-09-15",
-        "dateCreated": "2023-09-20",
-        "isDeleted": false
-      },
-      {
-        "inventoryId": "123e4567-e89b-12d3-a456-426614174001",
-        "name": "Alienware Area 51M",
-        "price": 2500,
-        "quantity": 14,
-        "description": "The latest Alienware Area 51M with 32GB RAM",
-        "categoryId": 2,
-        "releaseDate": "2023-04-17",
-        "dateCreated": "2023-05-20",
-        "isDeleted": false
-      },
-      {
-        "inventoryId": "ce15e6dd-422a-4276-994c-ac7270435e07",
-        "name": "Playstation 5 Slim ",
-        "price": 599,
-        "quantity": 13,
-        "description": "Product does not take physical disk. 4K 60FPS",
-        "categoryId": 3,
-        "releaseDate": "2020-10-18",
-        "dateCreated": "2021-09-28",
-        "isDeleted": false
-      },
-      {
-        "inventoryId": "96a610e0-b055-4993-8359-4f4af71752b2",
-        "name": "Apple MacBook Pro M3",
-        "price": 2899,
-        "quantity": 5,
-        "description": "The Latest MacBook, 16 Inch Wide screen",
-        "categoryId": 2,
-        "releaseDate": "2024-05-07",
-        "dateCreated": "2024-07-06",
-        "isDeleted": false
-      }
-    ]
-  }
+  "categories": [
+    {
+      "categoryId": "1",
+      "name": "Smart Phones",
+      "dateCreated": "2023-09-20",
+      "isDeleted": false,
+      "id": "4bc8"
+    },
+    {
+      "categoryId": "2",
+      "name": "Laptop",
+      "dateCreated": "2024-07-06",
+      "isDeleted": false,
+      "id": "288f"
+    },
+    {
+      "categoryId": "3",
+      "name": "Gaming Console",
+      "dateCreated": "2021-09-28",
+      "isDeleted": false
+    }
+  ],
+  "inventories": [
+    {
+      "id": "123e4567-e89b-12d3-a456-426614174000",
+      "name": "Apple I Phone 15 Pro Max",
+      "price": 1899,
+      "quantity": 25,
+      "description": "The latest Iphone 15 Pro Max with 1TB storage",
+      "categoryId": 1,
+      "releaseDate": "2022-09-15",
+      "dateCreated": "2023-09-20",
+      "isDeleted": false
+    },
+    {
+      "id": "123e4567-e89b-12d3-a456-426614174001",
+      "name": "Alienware Area 51M",
+      "price": 2500,
+      "quantity": 14,
+      "description": "The latest Alienware Area 51M with 32GB RAM",
+      "categoryId": 2,
+      "releaseDate": "2023-04-17",
+      "dateCreated": "2023-05-20",
+      "isDeleted": false
+    },
+    {
+      "id": "ce15e6dd-422a-4276-994c-ac7270435e07",
+      "name": "Playstation 5 Slim ",
+      "price": 599,
+      "quantity": 13,
+      "description": "Product does not take physical disk. 4K 60FPS",
+      "categoryId": 3,
+      "releaseDate": "2020-10-18",
+      "dateCreated": "2021-09-28",
+      "isDeleted": false
+    },
+    {
+      "id": "96a610e0-b055-4993-8359-4f4af71752b2",
+      "name": "Apple MacBook Pro M3",
+      "price": 2899,
+      "quantity": 5,
+      "description": "The Latest MacBook, 16 Inch Wide screen",
+      "categoryId": 2,
+      "releaseDate": "2024-05-07",
+      "dateCreated": "2024-07-06",
+      "isDeleted": false
+    },
+    {
+      "id": "eb6db0f1-d5a2-4382-baba-ed692343210a",
+      "name": "Xbox One Series X",
+      "price": 799,
+      "quantity": 27,
+      "description": "The Worlds most powerful Console from Microsoft",
+      "categoryId": 3,
+      "releaseDate": "2020-10-30",
+      "dateCreated": "2024-08-03T01:38:17.355Z",
+      "isDeleted": false
+    }
+  ]
+}

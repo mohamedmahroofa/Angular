@@ -10,7 +10,7 @@ import { Inventory } from '../models/inventory.model';
 })
 export class InventoryComponent implements OnInit {
   inventory: Inventory = {
-    inventoryId: '',
+    id: '',
     name: '',
     price: 0,
     quantity: 0,
@@ -28,17 +28,18 @@ export class InventoryComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    const inventoryId = this.route.snapshot.paramMap?.get('inventoryId'); // Get the inventoryId from the URL
-    if (inventoryId) {
-      this.inventoryService.getInventory(inventoryId).subscribe((data) => {
+    const id = this.route.snapshot.paramMap?.get('id'); // Get Inventory ID from route
+    if (id) {
+      // Fetch Inventory details if exists
+      this.inventoryService.getInventory(id).subscribe((data) => {
         this.inventory = data;
       });
     }
   }
 
-  // Add or Update the inventory after clicking the save button and navigate back to the inventory list
+  // Save Inventory Details
   saveInventory() {
-    if (this.inventory.inventoryId) {
+    if (this.inventory.id) {
       this.inventoryService
         .updateInventory(this.inventory)
         .subscribe(() => this.goBack());
@@ -49,16 +50,16 @@ export class InventoryComponent implements OnInit {
     }
   }
 
-  // Delete the Product from the inventory
+  // Delete Product from Inventory
   deleteInventory() {
-    if (this.inventory.inventoryId) {
+    if (this.inventory.id) {
       this.inventoryService
-        .deleteInventory(this.inventory.inventoryId)
+        .deleteInventory(this.inventory.id)
         .subscribe(() => this.goBack());
     }
   }
 
-  // Navigate back to the inventory list page
+  // Navigate back to Inventory List
   goBack() {
     this.router.navigate(['/inventories']);
   }

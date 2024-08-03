@@ -6,12 +6,15 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-inventory-list',
   templateUrl: './inventory-list.component.html',
-  styleUrl: './inventory-list.component.scss'
+  styleUrl: './inventory-list.component.scss',
 })
-export class InventoryListComponent implements OnInit{
+export class InventoryListComponent implements OnInit {
   inventories: Inventory[] = [];
 
-  constructor(private inventoryService: InventoryService, private router: Router) {}
+  constructor(
+    private inventoryService: InventoryService,
+    private router: Router
+  ) {}
 
   ngOnInit() {
     // Fetch Products in the Inventory on inventory-list component initialization
@@ -21,8 +24,8 @@ export class InventoryListComponent implements OnInit{
   }
 
   // Navigate to the Product details on the inventory component
-  viewInventory(inventoryId: string) {
-    this.router.navigate(['/inventory', inventoryId])
+  viewInventory(id: string) {
+    this.router.navigate(['/inventory', id]);
   }
 
   // Navigate to the new Product form on the inventory component
